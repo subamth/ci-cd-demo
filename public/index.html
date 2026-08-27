@@ -1,38 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+sudo tee index.html > /dev/null <<'EOF'
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>SUBAM Tech Hub — CI/CD Demo</title>
+  <title>AI Workshop — Acknowledgment</title>
   <style>
+    * { box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: -apple-system, Segoe UI, sans-serif;
-      background: #15111f;
-      color: #e4e1f0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.5;
+      max-width: 850px;
+      margin: 30px auto;
+      padding: 0 25px;
+      background-color: #f9f9f9;
+      color: #222;
     }
-    h1 { color: #00d9a3; font-size: 2.2rem; margin-bottom: 0.5rem; }
-    p { color: #9d94b8; font-size: 1.1rem; }
-    .badge {
-      margin-top: 1.5rem;
-      padding: 0.5rem 1rem;
-      background: #2b1b4a;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      color: #00d9a3;
+    h1 {
+      font-size: 34px;
+      text-align: center;
+      color: #1a1a2e;
+      margin: 10px 0 5px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px 25px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 20px;
+      margin: 0 0 6px 0;
+      color: #00806a;
+    }
+    .card p {
+      margin: 0;
+      color: #333;
+    }
+    .contact {
+      text-align: center;
+      background-color: #00d9a3;
+      color: #0d0a16;
+      border-radius: 12px;
+      padding: 15px 20px;
+      margin-top: 25px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 13px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 Deployed via CI/CD Pipeline</h1>
-  <p>This page was built into an nginx container, tested, and published automatically by GitHub Actions.</p>
-  <p>Edit this line, push, and watch it update live.</p>
-  <p>Welcome to Shree Chandraprabhu Jain College AI Workshop Session. </p>
-  <div class="badge">SUBAM TECH HUB</div>
+  <h1>🙏 Acknowledgment</h1>
+  <p class="subtitle">AI Workshop — Deployed via GitHub Actions CI/CD Pipeline</p>
+
+  <div class="card">
+    <h2>🏫 College</h2>
+    <p>We sincerely thank <strong>[Sree Rama Engineering College]</strong> for giving us the opportunity to conduct this AI workshop.</p>
+  </div>
+
+  <div class="card">
+    <h2>👨‍💼 Head of Department</h2>
+    <p>Heartfelt thanks to <strong>[DEEPAK SIR]</strong>, Head of the Department of <strong>[CSE]</strong>, for the support and encouragement extended for this workshop.</p>
+  </div>
+
+  <div class="card">
+    <h2>👩‍🏫 Staff Members</h2>
+    <p>We are grateful to the faculty and staff — <strong>[Staff Name 1]</strong>, <strong>[Staff Name 2]</strong>, <strong>[Staff Name 3]</strong> — for their coordination and support throughout the workshop.</p>
+  </div>
+
+  <div class="card">
+    <h2>🎓 Students</h2>
+    <p>Special thanks to all the <strong>students</strong> who actively participated and engaged with enthusiasm throughout the AI workshop.</p>
+  </div>
+
+  <div class="contact">
+    Thank you for this wonderful opportunity! 🚀
+  </div>
+
+  <footer>Deployed automatically via GitHub Actions</footer>
 </body>
 </html>
+EOF
